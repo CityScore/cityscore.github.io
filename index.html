@@ -1,0 +1,105 @@
+<!doctype html>  
+<html lang="en">
+<!-- copied from THE API EVANGELIST http://kinlane.github.io/talks -->
+<head> 
+	<meta charset="utf-8">
+	
+	<title>CityScore.io</title>
+
+    <!-- og -->
+    <meta name="author" content="J. Amos Stone">
+    
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+	
+	<link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+	
+	<link rel="stylesheet" href="/stylesheets/main.css">
+	<link rel="stylesheet" href="/stylesheets/theme/default.css" id="theme">
+
+	<!-- For syntax highlighting -->
+	<link rel="stylesheet" href="/lib/css/zenburn.css">
+
+	<script>
+		// If the query includes 'print-pdf' we'll use the PDF print sheet
+		document.write( '<link rel="stylesheet" href="/stylesheets/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+	</script>
+
+	<!--[if lt IE 9]>
+	<script src="lib/js/html5shiv.js"></script>
+	<![endif]-->
+	
+</head>
+		
+		<body>
+			
+			<div class="reveal">
+	
+				<!-- Used to fade in a background when a specific slide state is reached -->
+				<div class="state-background"></div>
+				
+				<!-- Any section element inside of this container is displayed as a slide -->
+				<div class="slides">
+					
+					<section>
+					   <img src="/lib/img/cityscore.png" />
+                    </section>
+
+					                                                                                                                       
+                    
+                    <section>
+                        
+                    </section>  
+
+                                                        
+
+
+
+                    
+
+                    
+
+				</div>
+	
+				<!-- The navigational controls UI -->
+				<aside class="controls">
+					<a class="left" href="#">&#x25C4;</a>
+					<a class="right" href="#">&#x25BA;</a>
+					<a class="up" href="#">&#x25B2;</a>
+					<a class="down" href="#">&#x25BC;</a>
+				</aside>
+	
+				<!-- Presentation progress bar -->
+				<div class="progress"><span></span></div>
+				
+			</div>
+			
+			
+			<script src="/lib/js/head.min.js"></script>
+			<script src="/javascripts/reveal.min.js"></script>
+	
+			<script>
+				
+				// Full list of configuration options available here:
+				// https://github.com/hakimel/reveal.js#configuration
+				Reveal.initialize({
+					controls: true,
+					progress: true,
+					history: true,
+					
+					theme: Reveal.getQueryHash().theme || 'default', // available themes are in /css/theme
+					transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/linear(2d)
+	
+					// Optional libraries used to extend on reveal.js
+					dependencies: [
+                        { src: '/lib/js/highlight.js', async: true, callback: function() { window.hljs.initHighlightingOnLoad(); } },
+                        { src: '/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                        { src: '/lib/js/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                        { src: '/lib/js/data-markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					]
+				});
+				
+			</script>
+
+	</body>
+</html>
